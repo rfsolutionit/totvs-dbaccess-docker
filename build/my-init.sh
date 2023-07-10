@@ -28,7 +28,7 @@ fi
   -p ${DB_PASS} \
   -d ${DB_TYPE} \
   -a ${DB_TYPE} \
-  -o "clientlibrary=/usr/lib64/libodbc.so" \
+  -o "clientlibrary=/usr/pgsql-12/lib/psqlodbca.so" \
   -g "LicenseServer=${LICENSE_SERVER};LicensePort=${LICENSE_SERVER_PORT};ByYouProc=0;ODBC30=1"
 
 if [ "$1" = 'dbaccess' ]; then
